@@ -61,7 +61,7 @@ while cap.isOpened():
         argmax_indices = np.argmax(face_name, axis=1)
         final_name = encoder.inverse_transform(argmax_indices)[0]
 
-        threshold = 0.1
+        threshold = 0.8
         print(max_values)
         if max_values < threshold:
             text = f"Name: Unknow \n Emo: ({emotion_prediction_label})"
